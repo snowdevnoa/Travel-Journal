@@ -1,0 +1,47 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-flow: column;
+}
+
+img {
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.journal {
+  width: 100%;
+}
+
+.details {
+  padding: 0 20px;
+}
+
+p {
+  text-align: left;
+}
+@media only screen and (max-width: 800px) {
+  .journal {
+    flex-flow: wrap column;
+  }
+
+  img {
+    min-width: 100%;
+    align-self: center;
+  }
+
+  .details {
+    align-items: flex-start;
+  }
+}
