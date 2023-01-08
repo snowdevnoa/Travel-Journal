@@ -9,8 +9,22 @@
   display: flex;
 }
 
+.center {
+  justify-content: center;
+}
+
+.v-center {
+  align-items: center;
+}
+
 .column {
   flex-flow: column;
+}
+
+.country {
+  letter-spacing: 0.17em;
+  margin-right: 10px;
+  margin-left: 5px;
 }
 
 img {
@@ -22,15 +36,33 @@ img {
 
 .journal {
   width: 100%;
+  margin-top: 36px;
 }
 
 .details {
   padding: 0 20px;
 }
 
-p {
+p,
+h1 {
   text-align: left;
 }
+
+a {
+  color: #918e9b;
+}
+
+.navbar {
+  height: 100px;
+  background-color: #4c459f;
+  color: white;
+  position: sticky;
+}
+
+.world {
+  margin-right: 10px;
+}
+
 @media only screen and (max-width: 800px) {
   .journal {
     flex-flow: wrap column;
